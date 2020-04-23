@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name            Herosaver Autoloader
 // @author          hero-saver
-// @namespace       https://github.com/hero-saver/threejs/
+// @namespace       https://github.com/matthiasdeo/threejs/
 // @description     Autoloader for the Herosaver Script
 // @version	        1
 // @include         *example.com/*
 // @include         *forge.com/*
-// @installURL      https://raw.githubusercontent.com/hero-saver/threejs/master/herosaver-autoloader.user.js
-// @downloadURL     https://raw.githubusercontent.com/hero-saver/threejs/master/herosaver-autoloader.user.js
-// @updateURL       https://raw.githubusercontent.com/hero-saver/threejs/master/herosaver-autoloader.user.js
+// @installURL      https://raw.githubusercontent.com/matthiasdeo/threejs/master/herosaver-autoloader.user.js
+// @downloadURL     https://raw.githubusercontent.com/matthiasdeo/threejs/master/herosaver-autoloader.user.js
+// @updateURL       https://raw.githubusercontent.com/matthiasdeo/threejs/master/herosaver-autoloader.user.js
 // @run-at          document-end
 // ==/UserScript==
  
@@ -31,7 +31,7 @@
 function runinsert(){
 
   // run the Herosaver Script
-  var xhr=new XMLHttpRequest;xhr.open("get","https://raw.githubusercontent.com/hero-saver/threejs/master/dist/saver.min.js",true);xhr.onreadystatechange=function(){if(xhr.readyState==4){var script=document.createElement("script");script.type="text/javascript";script.text=xhr.responseText;document.body.appendChild(script)}};xhr.send(null);
+  var xhr=new XMLHttpRequest;xhr.open("get","https://raw.githubusercontent.com/matthiasdeo/threejs/master/dist/saver.min.js",true);xhr.onreadystatechange=function(){if(xhr.readyState==4){var script=document.createElement("script");script.type="text/javascript";script.text=xhr.responseText;document.body.appendChild(script)}};xhr.send(null);
 
 };
 
